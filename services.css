@@ -1,0 +1,364 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+marquee {
+    background-color: #f3f3f3;
+    color: black;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: red;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    background-color: black;
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Mobile Navigation */
+nav.active {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+nav.active ul {
+    display: block;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav.active li {
+    margin: 15px 0;
+}
+
+nav.active .close-btn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+nav .close-btn {
+    display: none; /* Hide close button on desktop */
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.service {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Pricing Section */
+.pricing {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.pricing img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.card .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.card .price {
+    font-size: 2rem;
+    color: red;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    color: red;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    color: #bdc3c7;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Header */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Mobile Navigation */
+    nav {
+        display: none; /* Initially hidden */
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background-color: white;
+        border-radius: 10px;
+        width: 200px;
+        margin-top: 100px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav.active ul {
+        display: block;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    nav.active .close-btn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+    }
+
+    /* Hamburger Menu */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger-menu.active div {
+        background-color: #e74c3c; /* Change color when active */
+    }
+
+    .hamburger-menu div {
+        background-color: black;
+        height: 4px;
+        width: 30px;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+}
