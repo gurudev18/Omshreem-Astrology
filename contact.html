@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <marquee behavior="" direction=""><pre>ॐ   ಶ್ರೀಂ  ಹ್ರೀಂ  ಶ್ರೀಂ   ||  ॐ   श्रीं   ह्रीं   श्रीं   ||  Ōm   śrīṁ   hrīṁ  śrīṁ</pre></marquee>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="A-radiant-and-divine-depiction-of-the-Shree-Chakra-with-enhanced-brightness-and-energy.jpg" width="50" height="50" alt="logo">
+                <h1>Omshreem Astrology</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="astrologer.html">Talk to Astrologer</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="faq.html">FAQ's</a></li>
+                    <li><a href="#">Affirmations</a></li>
+                </ul>
+                
+            </nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="terms-section">
+            <h2>Terms and Conditions</h2>
+            <p>All consultations will be based on charts cast from the Vedic Astrology perspective. The consultation done is completely based on the accuracy of information provided (date of birth, time of birth, location of birth). The information provided cannot be considered a replacement for advice or consultation of any kind that you may receive from a licensed professional such as a doctor, lawyer, or financial advisor.</p>
+            <p>The fulfillment of predictions made or any services given is based on many factors, including an individual’s karma, dedication, and belief. It is a complex combination of the stars and manifestations happening in this cosmic world. www.Omshreem-astrology.com does not offer warranties, assurance, or guarantees of any kind, and will not be responsible for any interpretation or usage of the information given to the recipient.</p>
+            <p>Please send relevant information and a full case history, including complete and correct birth details. All furnished information will be treated in confidence. The consultation is done based on the details provided so if incorrect birth details or any information are furnished knowingly or unknowingly, and once consultation is done, a fresh remittance in full will be required for a new consultation if requested by the client. The fee once paid is non-refundable.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>At Astrology and Vaastu Services, we guide you on life's journey through astrology and Vaastu consultations.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Personalized Predictions</a></li>
+                    <li><a href="#">Vaastu Guidance</a></li>
+                    <li><a href="#">Career & Education</a></li>
+                    <li><a href="#">Marriage Compatibility</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Email:</strong> info@astrologyservices.com</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Address:</strong> Bangalore, Karnataka, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Astrology and Vaastu Services | All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+    // Function to toggle the menu on and off
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        const hamburger = document.querySelector('.hamburger-menu');
+    
+        // Toggle the 'active' class to show/hide the mobile navigation
+        nav.classList.toggle('active');
+        
+        // Change the hamburger menu icon when the menu is active
+        hamburger.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>
