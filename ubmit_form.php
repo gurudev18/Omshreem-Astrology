@@ -1,26 +1,26 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "mrgurudev1892@gmail.com";  // 🔁 Replace with your actual email address
+    $to = "mrgurudev1892@gmail.com"; // ✅ Change to your real email
+
     $name = htmlspecialchars($_POST["name"]);
     $email = htmlspecialchars($_POST["email"]);
     $subject = htmlspecialchars($_POST["subject"]);
     $message = htmlspecialchars($_POST["message"]);
 
-    $email_subject = "New Contact Form Submission: $subject";
-    $email_body = "You have received a new message from your website contact form.\n\n" .
-                  "Name: $name\n" .
-                  "Email: $email\n" .
-                  "Subject: $subject\n" .
-                  "Message:\n$message";
+    $email_subject = "Website Contact: $subject";
+    $email_body = "Name: $name\n";
+    $email_body .= "Email: $email\n";
+    $email_body .= "Subject: $subject\n\n";
+    $email_body .= "Message:\n$message\n";
 
-    $headers = "From: $email";
+    // ✅ Recommended: Use your domain email as sender
+    $headers = "From: info@yourdomain.com\r\n";
+    $headers .= "Reply-To: $email\r\n";
 
     if (mail($to, $email_subject, $email_body, $headers)) {
-        echo "<h2>Thank you! Your message has been sent successfully.</h2>";
+        echo "Message sent successfully!";
     } else {
-        echo "<h2>Sorry, something went wrong. Please try again later.</h2>";
+        echo "Message failed. Check mail setup.";
     }
-} else {
-    echo "Invalid request method.";
 }
 ?>
