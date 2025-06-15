@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "Message:\n$message\n";
 
     // ✅ Recommended: Use your domain email as sender
-    $headers = "From: info@yourdomain.com\r\n";
+    $headers = "From: contact@omshreem-astrology.com\r\n";
     $headers .= "Reply-To: $email\r\n";
 
     if (mail($to, $email_subject, $email_body, $headers)) {
