@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "mrgurudev1892@gmail.com"; // ✅ Change to your real email
+    $to = "contact@omshreem-astrology.com"; // ✅ Change to your real email
 
     $name = htmlspecialchars($_POST["name"]);
     $email = htmlspecialchars($_POST["email"]);
