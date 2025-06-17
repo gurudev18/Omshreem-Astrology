@@ -166,6 +166,7 @@ main {
     background-color: red;
     color: white;
     border: none;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -266,7 +267,7 @@ main {
 
 /* Footer */
 .footer {
-    background-color: black;
+    background-color:black;
     color: red;
     padding: 50px 20px;
 }
